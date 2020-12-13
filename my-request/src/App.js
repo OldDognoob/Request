@@ -7,9 +7,16 @@ import "./App.css";
 
 function App(){
   const getJoke = () => {
-    axios.get ("https://official-joke-api.appspot.com/random_joke");
-  }
-  return <div>Hello Dimos!</div>;
+    axios.get ("https://official-joke-api.appspot.com/random_joke")
+    .then((response)=>{
+      console.log(response);
+    }
+    );
+  };
+  return <div>Hello Dimos!
+    <button onClick={getJoke}>Get the Joke</button>
+  </div>;
+  
 
 
 }
