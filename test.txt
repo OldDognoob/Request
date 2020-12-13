@@ -1,0 +1,2 @@
+Welcome! This is a small revision on how to get an API, using React, axios Library and the fetch.
+My goal is to remember it and try to create some projects around it.
